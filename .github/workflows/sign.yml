@@ -2,8 +2,12 @@ name: Netease Daily Sign
 
 on:
   schedule:
-    - cron: "35 20 * * *"   # 每天 04:35 (UTC+8)
-    - cron: "30 14 * * *"   # 每天 22:30 (UTC+8)
+    # 默认每天北京时间 09:20 执行。修改时间时只改 cron 即可。
+    - cron: "35 1 * * *"
+      timezone: "Asia/Shanghai"
+    - cron: "35 8 * * *"
+      timezone: "Asia/Shanghai"
+
   workflow_dispatch:
 
 jobs:
