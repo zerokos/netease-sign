@@ -5,7 +5,7 @@ on:
     # 默认每天北京时间 09:20 执行。修改时间时只改 cron 即可。
     - cron: "35 1 * * *"
       timezone: "Asia/Shanghai"
-    - cron: "35 8 * * *"
+    - cron: "35 19 * * *"
       timezone: "Asia/Shanghai"
 
   workflow_dispatch:
